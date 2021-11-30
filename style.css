@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@700&display=swap');
+
+/* General CSS Area */
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.strict-section-tite{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.strict-section-tite h2{
+    font-size: 40px;
+    color: #2d3950;
+}
+.strict-section-tite p{
+    color: #909090;
+    font-size: 15px;
+}
+
+.strict-about-text{
+    text-align: center;
+}
+.strict-about-text p{
+    color: #999999;
+    font-size: 19.5px;
+    font-weight: 400;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+/* Header CSS Area */
+
+.strict-header{
+    background-color: #f5f9f9;
+    padding: 25px 0;
+}
+
+
+.strict-menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+.strict-menu ul li a{
+    color: #454444;
+    padding: 5px 20px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+/* Banner CSS Area */
+
+.strict-banner{
+    background: url(images/Strict-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 150px 0 90px;
+}
+.strict-banner-text{
+    color: #fff;
+}
+.strict-banner-text h1{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 35px;
+}
+.strict-banner-text p{
+    font-size: 20px;
+    font-weight: 400;
+    border-top: 1px solid #15a3f9;
+    display: inline-block;
+    padding: 40px 20px;
+}
+
+.strict-banner-button a{
+    border: 1px solid #15a3f9;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 30px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.strict-banner-button a:hover{
+    background-color: #15a3f9;
+}
+.strict-banner-button i{
+    display: block;
+    color: #fff;
+    margin-top: 150px;
+}
+.strict-banner-button i:hover{
+    cursor: pointer;
+}
+
+/* About CSS Area */
+
+.strict-about{
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Service CSS Area */
+
+.strict-service{
+    background-color: #fff;
+    padding: 65px 0;
+}
+
+.strict-service-icon{
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #48baff), color-stop(50%, #5fc2ff));
+    background: -o-linear-gradient(left, #48baff 50%, #5fc2ff 50%);
+    background: linear-gradient(90deg, #48baff 50%, #5fc2ff 50%);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.strict-service-icon i{
+    color: #fff;
+    font-size: 45px;
+}
+.strict-service-text{
+    text-align: center;
+}
+.strict-service-text h5{
+    font-size: 22px;
+    color: #2d3950;
+    margin-bottom: 10px;
+}
+.strict-service-text p{
+    font-size: 15px;
+    color: #999999;
+    line-height: 28px;
+}
+
+/* Work CSS Area */
+
+.strict-work-items{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.strict-work-items-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 163, 249, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.strict-work-items-hover ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.strict-work-items-hover ul li{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 5px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.strict-work-items-hover ul li i{
+    color: #f5f9f9;
+}
+.strict-work-items:hover .strict-work-items-hover{
+    opacity: 1;
+}
+.strict-work-items-hover ul li:hover{
+    background-color: #fff;
+}
+.strict-work-items-hover ul li:hover i{
+    color: #15a3f9;
+}
+
+/* Contact CSS Area */
+
+.strict-contact{
+    background-image: url(images/contact-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.strict-contact .strict-section-tite h2{
+    color: #fff;
+}
+.strict-contact-overlay{
+    background-color: rgba(45, 57, 79, 0.8);
+    padding: 75px 0;
+}
+.strict-contact form input[type=text],
+.strict-contact form input[type=email],
+.strict-contact form textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #999999;
+    padding: 5px;
+    color: #999999;
+    border-radius: 3px;
+}
+.strict-form-bottom{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.strict-subscribe label{
+    color: #909090;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.strict-submit input{
+    border: 1px solid #15a3f9;
+    border-radius: 3px;
+    color: #f5f9f9;
+    background-color: transparent;
+    padding: 3px 35px;
+}
+
+/* Footer CSS Area */
+
+.strict-footer{
+    background-color: #f5f9f9;
+    padding: 25px 0;
+}
+.strict-copyright p{
+    color: #999999;
+    font-size: 15px;
+    margin: 0;
+}
+
+.strict-social-icon ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.strict-social-icon ul li{
+    margin-left: 10px;
+}
+
+.strict-social-icon ul li a i{
+    font-size: 35px;
+}
